@@ -1,10 +1,18 @@
+:root {
+    --backgroundColor: rgb(51, 51, 51);
+    --mainFontColor: rgb(240, 240, 240);
+    --cardBackgroundColor: rgb(240, 240, 240);
+    --cardFontColor: rgb(21, 21, 21);
+    --headerHeight: 125px;
+}
+
 #header {
-    background-color: rgb(254, 255, 231);
+    background-color: var(--backgroundColor);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 125px;
+    height: var(--headerHeight);
 }
 .headerOne {
     position: absolute;
@@ -18,7 +26,7 @@
 
 #logoContainer {
     position: relative;
-    background-color: rgb(254, 255, 231);
+    background-color: var(--backgroundColor);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,24 +37,13 @@
     position: relative;
     width: 200px;
     height: 100px;
-    background-color: rgb(254, 255, 231);
+    background-color: var(--backgroundColor);
 }
 #logoContainerRight {
     position: relative;
     width: 140px;
     height: 100px;
-    background-color: rgb(254, 255, 231);
-}
-
-#logoHeadContainer {
-    position: absolute;
-    bottom: 0;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 150px;
+    background-color: var(--backgroundColor);
 }
 
 .reactLogo {
@@ -82,4 +79,21 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+#playgroundContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: var(--backgroundColor);
+}
+
+.card {
+    background-color: var(--cardBackgroundColor);
+    color: var(--cardFontColor);
+    width: 90%;
+    max-width: 500px;
+    height: 200px;
 }
