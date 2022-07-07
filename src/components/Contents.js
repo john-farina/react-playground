@@ -1,10 +1,11 @@
 import HelloWorldCard from './HelloWorldCard';
 import ColorButtonsCard from './ColorButtonsCard';
-import DarkLightModeCard from './DarkLightModeCard';
+import FormCard from './FormCard';
 import { useState } from 'react';
+// import DarkLightModeCard from './DarkLightModeCard';
 
 function Contents({ themeStyle }) {
-    const [thisThemeStyle, changeTheme] = useState({
+    const [thisThemeStyle] = useState({
         backgroundColor: themeStyle.backgroundColor,
     });
 
@@ -12,7 +13,8 @@ function Contents({ themeStyle }) {
         <div style={thisThemeStyle} id="playgroundContent">
             <HelloWorldCard />
             <ColorButtonsCard />
-            <DarkLightModeCard />
+            <FormCard />
+            {/* <DarkLightModeCard onClick={onClick} /> */}
         </div>
     );
 }

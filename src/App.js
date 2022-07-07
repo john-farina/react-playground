@@ -5,8 +5,8 @@ import Contents from './components/Contents';
 import { useState } from 'react';
 
 function App() {
-    const [darkLightMode, changeTheme] = useState({
-        backgroundColor: 'blue',
+    const [darkLightMode] = useState({
+        backgroundColor: '',
     });
 
     return (
