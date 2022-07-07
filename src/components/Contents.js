@@ -1,6 +1,7 @@
 import HelloWorldCard from './HelloWorldCard';
 import ColorButtonsCard from './ColorButtonsCard';
 import FormCard from './FormCard';
+import MovementCard from './MovementCard';
 import { useState } from 'react';
 // import DarkLightModeCard from './DarkLightModeCard';
 
@@ -14,7 +15,7 @@ function Contents({ themeStyle }) {
             <HelloWorldCard />
             <ColorButtonsCard />
             <FormCard />
-            {/* <DarkLightModeCard onClick={onClick} /> */}
+            <MovementCard />
         </div>
     );
 }
