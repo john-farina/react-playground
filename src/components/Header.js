@@ -2,7 +2,7 @@ import { useState } from 'react';
 import SvgLogo from './SvgLogo';
 
 function Header({ themeStyle }) {
-    const [thisThemeStyle, changeTheme] = useState({
+    const [thisThemeStyle] = useState({
         backgroundColor: themeStyle.backgroundColor,
     });
 
