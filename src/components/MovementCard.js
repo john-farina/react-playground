@@ -29,44 +29,39 @@ function MovementCard() {
             changeStyleLeft({ display: 'flex' });
             changeStyleMiddle({ display: 'none' });
             changeStyleRight({ display: 'none' });
-            return;
         } else if (movementCount === 1) {
             changeStyleLeft({ display: 'none' });
             changeStyleMiddle({ display: 'flex' });
             changeStyleRight({ display: 'none' });
-            return;
         } else if (movementCount === 2) {
             changeStyleLeft({ display: 'none' });
             changeStyleMiddle({ display: 'none' });
             changeStyleRight({ display: 'flex' });
-            return;
         } else {
             console.log('error');
-            return;
         }
     }
 
     function lowerMovementCount() {
         if (movementCount === 0) {
-            detectMovement();
             changeMovement(2);
             console.log(movementCount);
-        } else {
             detectMovement();
+        } else {
             changeMovement(movementCount - 1);
             console.log(movementCount);
+            detectMovement();
         }
     }
     function raiseMovementCount() {
         if (movementCount === 2) {
-            detectMovement();
             changeMovement(0);
             console.log(movementCount);
-        } else {
             detectMovement();
+        } else {
             changeMovement(movementCount + 1);
-
             console.log(movementCount);
+            detectMovement();
         }
     }
 
