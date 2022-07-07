@@ -83,6 +83,8 @@
 
 #playgroundContent {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -93,7 +95,30 @@
 .card {
     background-color: var(--cardBackgroundColor);
     color: var(--cardFontColor);
+    font-family: Arial, Helvetica, sans-serif;
     width: 90%;
     max-width: 500px;
     height: 200px;
+}
+
+#colorButtonCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transition: background-color 0.4s;
+}
+
+#darkLightMode {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+#darkMode,
+#lightMode {
+    width: 100px;
+    height: 30px;
 }

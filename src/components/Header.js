@@ -1,14 +1,19 @@
+import { useState } from 'react';
 import SvgLogo from './SvgLogo';
 
-function Header() {
+function Header({ themeStyle }) {
+    const [thisThemeStyle, changeTheme] = useState({
+        backgroundColor: themeStyle.backgroundColor,
+    });
+
     return (
-        <div id="header">
-            <div id="header">
-                <div id="logoContainer">
-                    <div id="logoContainerLeft">
+        <div style={thisThemeStyle} id="header">
+            <div style={thisThemeStyle} id="header">
+                <div style={thisThemeStyle} id="logoContainer">
+                    <div style={thisThemeStyle} id="logoContainerLeft">
                         <h1 className="headerOne">REACT</h1>
                     </div>
-                    <div id="logoContainerRight">
+                    <div style={thisThemeStyle} id="logoContainerRight">
                         <SvgLogo />
                         <h1 className="headerTwo">playground</h1>
                     </div>
