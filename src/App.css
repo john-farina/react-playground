@@ -10,6 +10,7 @@
     background-color: var(--backgroundColor);
     position: relative;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     height: var(--headerHeight);
@@ -128,4 +129,8 @@
     height: 70px;
     border-radius: 50%;
     background-color: rgb(20, 20, 20);
+}
+
+.timeoutCard {
+    transition: background-color 0.2s;
 }

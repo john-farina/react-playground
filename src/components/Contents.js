@@ -2,9 +2,9 @@ import HelloWorldCard from './HelloWorldCard';
 import ColorButtonsCard from './ColorButtonsCard';
 import FormCard from './FormCard';
 import MovementCard from './MovementCard';
+import SetTimeOutCard from './SetTimeOutCard';
 import { useState } from 'react';
 // import DarkLightModeCard from './DarkLightModeCard';
-
 function Contents({ themeStyle }) {
     const [thisThemeStyle] = useState({
         backgroundColor: themeStyle.backgroundColor,
@@ -16,6 +16,7 @@ function Contents({ themeStyle }) {
             <ColorButtonsCard />
             <FormCard />
             <MovementCard />
+            <SetTimeOutCard />
         </div>
     );
 }
