@@ -17,7 +17,7 @@ function SetTimeOutCard() {
             changeStyle({
                 backgroundColor: 'lightblue',
                 height: '160px',
-                borderRadius: '2%',
+                borderRadius: '20%',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
