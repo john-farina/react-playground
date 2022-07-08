@@ -4,6 +4,8 @@ import FormCard from './FormCard';
 import MovementCard from './MovementCard';
 import SetTimeOutCard from './SetTimeOutCard';
 import { useState } from 'react';
+
+import FsPhoneBook from './fullstackopen/FsPhoneBook';
 // import DarkLightModeCard from './DarkLightModeCard';
 function Contents({ themeStyle }) {
     const [thisThemeStyle] = useState({
@@ -17,6 +19,7 @@ function Contents({ themeStyle }) {
             <FormCard />
             <MovementCard />
             <SetTimeOutCard />
+            <FsPhoneBook />
         </div>
     );
 }
