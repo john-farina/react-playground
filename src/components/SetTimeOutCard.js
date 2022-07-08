@@ -3,6 +3,7 @@ import { useState } from 'react';
 function SetTimeOutCard() {
     const [styles, changeStyle] = useState({
         backgroundColor: 'gray',
+        height: '120px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -11,22 +12,38 @@ function SetTimeOutCard() {
     });
     const [text, changeText] = useState('click the button');
 
-    function changeColor() {
-        changeStyle({
-            backgroundColor: 'lightblue',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-            textAlign: 'center',
-        });
+    function changeColor(trueFalse) {
+        if (trueFalse === true) {
+            changeStyle({
+                backgroundColor: 'lightblue',
+                height: '160px',
+                borderRadius: '2%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column',
+                textAlign: 'center',
+            });
+        } else if (trueFalse === false) {
+            changeStyle({
+                backgroundColor: 'gray',
+                height: '120px',
+                borderRadius: '0%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column',
+                textAlign: 'center',
+            });
+        }
     }
 
     function twoSeconds() {
+        changeColor(false);
         changeText('clicked');
         setTimeout(() => {
             changeText('changed in two seconds. wow');
-            changeColor();
+            changeColor(true);
         }, 2000);
     }
 
