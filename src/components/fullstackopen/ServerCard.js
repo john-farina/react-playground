@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ServerSearchInfo from './ServerSearchInfo';
 
 function ServerCard({ list }) {
     const styles = {
@@ -24,10 +25,12 @@ function ServerCard({ list }) {
                     type="text"
                     placeholder="search"
                 />
-                <h2>Search a country (got this from a server)</h2>
-                {search.map((item) => {
-                    return <p key={item.name.common}>{item.name.common}</p>;
-                })}
+                <h2>
+                    Search a country{' '}
+                    <span className="smallText">(got this from a server)</span>
+                </h2>
+
+                <ServerSearchInfo searchInfo={search} />
             </div>
         </>
     );
