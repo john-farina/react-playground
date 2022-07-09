@@ -17,7 +17,6 @@ function App() {
         });
     }
     useEffect(hook, []);
-    const [weatherList, setWeather] = useState([]);
     console.log('COUNTRY: got', countryList, ' promises fulfilled');
 
     return (
