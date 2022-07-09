@@ -10,6 +10,7 @@ function ServerCard({ list }) {
     const searchStyle = {
         marginBottom: '-20px',
     };
+    const [weatherList, setWeather] = useState([]);
 
     function handleSearchChange(event) {
         console.log(event.target.value);

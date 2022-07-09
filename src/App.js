@@ -17,7 +17,9 @@ function App() {
         });
     }
     useEffect(hook, []);
-    console.log('got', countryList.length, ' promises fulfilled');
+    const [weatherList, setWeather] = useState([]);
+    console.log('COUNTRY: got', countryList, ' promises fulfilled');
+
     return (
         <>
             <Header themeStyle={darkLightMode} />

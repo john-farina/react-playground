@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function ServerSearchInfo({ searchInfo }) {
+function ServerSearchInfo({ searchInfo, weather }) {
     const [infoScreen, setInfo] = useState(false);
 
     function handleClick() {
@@ -39,6 +39,7 @@ function ServerSearchInfo({ searchInfo }) {
                             <div className="countryText">
                                 the population is: {item.population}
                             </div>
+                            <div className="countryText">{item.latlng}</div>
                         </div>
                         <img
                             className="countryFlag"

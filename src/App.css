@@ -192,7 +192,7 @@
     height: 100px;
     background-color: gray;
     cursor: pointer;
-    transition: width 1s, height 1s, border-radius 1s;
+    transition: width 1s, height 1s, border-radius 1s, align-items 1s;
     overflow-y: scroll;
     border-radius: 10% 0% 10% 0%;
 }
@@ -202,6 +202,7 @@
     width: 350px;
     height: 300px;
     border-radius: 10% 10% 10% 10%;
+    align-items: flex-start;
 }
 .textContainer {
     z-index: 1;
