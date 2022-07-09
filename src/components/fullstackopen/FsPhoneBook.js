@@ -7,6 +7,18 @@ function FsPhoneBook() {
             name: 'John Farina',
             number: '555-5555',
         },
+        {
+            name: 'greg',
+            number: '535-5555',
+        },
+        {
+            name: 'jeff',
+            number: '555-5255',
+        },
+        {
+            name: 'fredrick',
+            number: '155-5555',
+        },
     ]);
     const [newName, setNewName] = useState('');
     const [newNumber, setNewNumber] = useState('');
@@ -19,6 +31,7 @@ function FsPhoneBook() {
         setNewNumber(event.target.value);
         console.log(newNumber);
     }
+
     function handleSubmit(event) {
         for (let i = 0; i < people.length; i++) {
             if (people[i].name === newName) {
