@@ -1,12 +1,10 @@
 import { useState } from 'react';
 
 function ServerCard({ list }) {
-    // console.log(list);
     const styles = {
         overflowY: 'scroll',
     };
-    const result = list.filter((word) => word.name.common.includes('y'));
-    // console.log(result);
+
     const [search, setSearch] = useState([]);
 
     function handleSearchChange(event) {
@@ -20,13 +18,13 @@ function ServerCard({ list }) {
 
     return (
         <>
-            <div style={styles} className="card">
+            <div style={styles} className="card countryCard">
                 <input
                     onChange={handleSearchChange}
                     type="text"
                     placeholder="search"
                 />
-                <h2>i got this from a server wow</h2>
+                <h2>Search a country (got this from a server)</h2>
                 {search.map((item) => {
                     return <p key={item.name.common}>{item.name.common}</p>;
                 })}
