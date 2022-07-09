@@ -4,6 +4,7 @@ import FormCard from './FormCard';
 import MovementCard from './MovementCard';
 import SetTimeOutCard from './SetTimeOutCard';
 import ServerCard from './fullstackopen/ServerCard';
+import EmptyCard from './EmptyCard';
 import { useState } from 'react';
 
 import FsPhoneBook from './fullstackopen/FsPhoneBook';
@@ -22,6 +23,7 @@ function Contents({ themeStyle, list }) {
             <SetTimeOutCard />
             <FsPhoneBook />
             <ServerCard list={list} />
+            <EmptyCard />
         </div>
     );
 }

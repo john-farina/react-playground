@@ -28,6 +28,7 @@ function ServerSearchInfo({ searchInfo }) {
                         <div className="textContainer">
                             <h4 className="countryText" style={noMargin}>
                                 {item.name.common}
+                                {item.flag}
                             </h4>
                             <div className="countryText">
                                 region: {item.region}

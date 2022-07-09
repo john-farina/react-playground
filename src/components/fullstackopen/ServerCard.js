@@ -7,6 +7,9 @@ function ServerCard({ list }) {
     };
 
     const [search, setSearch] = useState([]);
+    const searchStyle = {
+        marginBottom: '-20px',
+    };
 
     function handleSearchChange(event) {
         console.log(event.target.value);
@@ -19,17 +22,17 @@ function ServerCard({ list }) {
 
     return (
         <>
+            <input
+                onChange={handleSearchChange}
+                type="text"
+                placeholder="search"
+                style={searchStyle}
+            />
             <div style={styles} className="card countryCard">
-                <input
-                    onChange={handleSearchChange}
-                    type="text"
-                    placeholder="search"
-                />
                 <h2>
                     Search a country{' '}
                     <span className="smallText">(got this from a server)</span>
                 </h2>
-
                 <ServerSearchInfo searchInfo={search} />
             </div>
         </>
